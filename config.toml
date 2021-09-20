@@ -1,14 +1,7 @@
-#baseURL = 'http://example.org/'
-#languageCode = 'en-us'
-#title = 'My New Hugo Site'
-#theme = "ananke"
 title = "Notre-Dame de Paris"
-baseURL = "https://example.com"
+baseURL = "https://jbdoumenjou.github.io"
 languageCode = "en-us"
-#theme = "gohugo-theme-ananke"
 theme = "ananke"
-#themesDir = "../.."
-#resourceDir = "../resources"
 
 DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
