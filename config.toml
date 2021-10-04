@@ -11,12 +11,12 @@ enableRobotsTXT = true
 
 [languages]
 	[languages.en]
-		title = "My blog"
+		title = "JB's blog"
 		weight = 1
 		contentDir = "content/en"
 
 [languages.fr]
-	title = "Mon blogue"
+	title = "Blog de JB"
 	weight = 2
 	contentDir = "content/fr"
 
@@ -28,12 +28,12 @@ enableRobotsTXT = true
 [params]
 	favicon = ""
 	site_logo = ""
-	description = "The last theme you'll ever need. Maybe."
+	description = "Just another g33k's blog"
 	facebook = ""
-	twitter = "https://twitter.com/GoHugoIO"
+	twitter = "https://twitter.com/jbdoumenjou"
 	instagram = ""
 	youtube = ""
-	github = ""
+	github = "https://github.com/jbdoumenjou"
 	gitlab = ""
 	linkedin = ""
 	mastodon = ""
