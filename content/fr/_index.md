@@ -1,8 +1,9 @@
 ---
-title: "Ananke: Un thème pour Hugo"
-featured_image: '/images/gohugo-default-sample-hero-image.jpg'
-description: "Le dernier thème dont vous aurez besoin. Peut-être"
+title: "Pérégrinations d'un g33k ordinaire"
+description: "Le non-guide du voyageur inter-neuronique."
+featured_image: "/images/ia_bg1280.jpg"
 ---
-Bienvenu sur mon blog!
+Voyageurs, voyageuses, bienvenue dans ce joyeux bric à brac d'idées et d'expérimentations.
 
-Vous pouvez lire mes idées de publication plus bas.
+Approchez, n'ayez crainte, prenez votre temps.
+

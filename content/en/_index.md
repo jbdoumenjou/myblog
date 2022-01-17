@@ -1,6 +1,8 @@
 ---
-title: "Ananke: a Hugo Theme"
-featured_image: '/images/gohugo-default-sample-hero-image.jpg'
-description: "The last theme you'll ever need. Maybe."
+title: "Peregrinations of an ordinary g33k"
+description: "The non-guide of the inter-neuron traveler."
+featured_image: "/images/ia_bg1280.jpg"
 ---
-Welcome to my blog with some of my work in progress. I've been working on this book idea. You can read some of the chapters below.
+Dear Travelers, welcome to this joyful bric-a-brac of ideas and experiments.
+
+Come closer, don't be afraid, take your time.
