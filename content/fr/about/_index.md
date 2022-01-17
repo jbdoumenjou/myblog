@@ -1,7 +1,7 @@
 ---
 title: "A Propos"
 description: ""
-featured_image: ''
+featured_image: "/images/ia_bg1280.jpg"
 ---
 
 Humble technophile, auto-proclamé Neuro-trublion expert en bonne humeur. 

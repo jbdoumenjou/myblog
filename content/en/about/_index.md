@@ -1,7 +1,7 @@
 ---
 title: "About"
 description: ""
-featured_image: ''
+featured_image: "/images/ia_bg1280.jpg"
 ---
 
 Humble technophile, self-proclaimed Neuro-trublion expert in good humor.

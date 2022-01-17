@@ -1,9 +1,9 @@
 ---
 title: "Pérégrinations d'un g33k ordinaire"
-featured_image: '/images/gohugo-default-sample-hero-image.jpg'
 description: "Le non-guide du voyageur inter-neuronique."
+featured_image: "/images/ia_bg1280.jpg"
 ---
-Chers Voyageurs, bienvenu dans ce joyeux bric à brac d'idées et d'expérimentations.
+Voyageurs, voyageuses, bienvenue dans ce joyeux bric à brac d'idées et d'expérimentations.
 
-Approchez, n'ayez crainte, prenez le temps.
+Approchez, n'ayez crainte, prenez votre temps.
 

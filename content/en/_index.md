@@ -1,7 +1,7 @@
 ---
 title: "Peregrinations of an ordinary g33k"
-featured_image: '/images/gohugo-default-sample-hero-image.jpg'
 description: "The non-guide of the inter-neuron traveler."
+featured_image: "/images/ia_bg1280.jpg"
 ---
 Dear Travelers, welcome to this joyful bric-a-brac of ideas and experiments.
 
