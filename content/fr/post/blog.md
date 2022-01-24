@@ -11,7 +11,7 @@ Il est en ce monde bien des sujets qui peuvent être abordés avec plus ou moins
 
 J'avoue, un peu honteusement, qu'il ne s'agit que d'un morceau de jardin secret, ou plutôt un potager partagé.
 En effet, pour peu que le cœur t'en dise,
-j'aimerai planter des graines,
+j'aimerais planter des graines,
 faire germer des idées en partageant avec toi quelques-unes de mes expérimentations, de mes pensées.
 
 Tout voyage commence par un premier pas, partons donc simplement par la création même de ce coin de lecture. 
@@ -27,38 +27,38 @@ Cependant, une voix insistante me susurrait dans l'oreille : "un peu de courage,
 Puis vint la motivation.
 Il me fallait quelque chose de suffisamment technique pour être amusant,
 simple pour ne pas y perdre trop de temps et gratuit pour ne pas y perdre trop d'argent.
-Développeur de profession, je fis un rapprochement d'idées : puis-je gérer le blog comme je gère du code.
+Développeur de profession, je fis un rapprochement d'idées : puis-je gérer le blog comme je gère du code ?
 Je m'impose deux contraintes, garder le gestionnaire de sources et utiliser des technologies connues.
-En somme, j'aimerai utiliser [Git](https://git-scm.com/) et [github](https://github.com/),
+En somme, j'aimerais utiliser [Git](https://git-scm.com/) et [github](https://github.com/),
 et trouver un [SGC](https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_gestion_de_contenu) en [Go](https://go.dev/).
 
 Bref, j'ai choisi sans trop de surprise [Hugo](https://gohugo.io/).
-C'est un outil [open source](https://github.com/gohugoio/hugo) écrit en [Go](https://go.dev/) qui permet de générer des sites statiques.
-Ça n'a l'air de n'être qu'un détail, mais il faudra un jour que je te parle du monde de l'[open source](https://fr.wikipedia.org/wiki/Open_source),
+C'est un outil [open source](https://github.com/gohugoio/hugo) écrit en Go qui permet de générer des sites statiques.
+Ça n'a l'air de n'être qu'un détail, mais il faudra un jour que je te parle du monde de l'Open Source,
 à la fois fabuleux et inquiétant, ouvert et impitoyable, ce sera l'objet d'une prochaine ballade.
 
 Revenons à nos moutons, mais pour mieux comprendre la suite de notre voyage,
-il faut que je t'éclaire sur le fonctionnement d'[Hugo](https://gohugo.io/).
+il faut que je t'éclaire sur le fonctionnement d'Hugo.
 Il s'agit d'un outil qui va prendre du contenu écrit en [markdown](https://fr.wikipedia.org/wiki/Markdown), 
 utiliser un [modèle](https://gohugo.io/templates/) pour transformer tout ça en un site tout beau tout propre.
-Tu l'auras compris, [Hugo](https://gohugo.io/) te fourni à la fois une base structurelle à personnaliser
+Tu l'auras compris, Hugo te fourni à la fois une base structurelle à personnaliser
 et des outils de générations pour te mener au but ultime : la publication de ton site.
 
 C'est bien joli tout ça, me diras-tu, mais du coup, comment et où le publie-t-on ce Blog ?
-Effectivement, je peux stocker le contenu et la structure du site dans un dépôt [Github](https://github.com/),
+Effectivement, je peux stocker le contenu et la structure du site dans un dépôt Github,
 mais où vais-je donc le publier ?
-Il se trouve que [Github](https://github.com/) propose d'héberger des pages static via [Github Pages](https://pages.github.com/).
+Il se trouve que Github propose d'héberger des pages statiques via [Github Pages](https://pages.github.com/).
 
-Je te vois venir, et tu as raison, je ne peux (décemment) pas mettre le contenu du projet Hugo dans le dépôt de [Github Pages](https://pages.github.com/).
+Je te vois venir, et tu as raison, je ne peux (décemment) pas mettre le contenu du projet Hugo dans le dépôt de Github Pages.
 La brique qui nous manque pour résoudre ce puzzle peut être fournie par une [intégration continue](https://fr.wikipedia.org/wiki/Int%C3%A9gration_continue).
 Il s'avère, que [Github Actions](https://docs.github.com/en/actions) répond à ces attentes.
 
 Bien, j'ai un dépôt d'édition/génération et un dépôt de publication.
 Voyons comment je peux me dépatouiller de ce schmilblick.
-Sur le dépôt de publication, j'active les [Github Actions](https://docs.github.com/en/actions) et je définis leurs comportements directement dans le dépôt concerné.
+Sur le dépôt de publication, j'active les Github Actions et je définis leurs comportements directement dans le dépôt concerné.
 En utilisant leurs superpouvoirs, je dois [téléporter les sources](https://github.com/actions/checkout),
 récupérer les [outils nécessaires](https://github.com/peaceiris/actions-hugo) à la génération,
-transmuter la matière en site et [déployer](https://github.com/peaceiris/actions-gh-pages) pour [Github Pages](https://pages.github.com/).
+transmuter la matière en site et [déployer](https://github.com/peaceiris/actions-gh-pages) pour Github Pages.
 Toutes ces incantations sont lisibles dans le [grimoire](https://github.com/jbdoumenjou/myblog/blob/main/.github/workflows/gh-pages.yml) du site.
 
 Si la curiosité t'a poussée à lire les incantations de ce site, tu as pu détecter un peu de mysticisme, le mot de pouvoir `secrets.GH_TOKEN`.
@@ -82,4 +82,4 @@ Il s'agit tout de même d'une étape suffisante pour commencer à partager avec 
 et d'ouvrir la voie pour de fabuleuses aventures (ou de petits égarements).
 
 Je te laisse ici, en espérant te revoir bientôt !
-Que les vents te soient favorable.
+Que les vents te soient favorables.
