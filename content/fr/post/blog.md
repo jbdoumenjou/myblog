@@ -4,7 +4,6 @@ description: "De flemme en motivation"
 featured_image: "/images/letters_bg_1280.jpg"
 tags: ["cms","golang","hugo"]
 title: "C'est l'histoire d'un blog"
-draft: true
 ---
 
 Toi qui es de passage en ce modeste lieu, tu te demandes sans doute ce que tu vas y trouver...
@@ -84,6 +83,3 @@ et d'ouvrir la voie pour de fabuleuses aventures (ou de petits égarements).
 
 Je te laisse ici, en espérant te revoir bientôt !
 Que les vents te soient favorable.
-
- 
-
