@@ -1,5 +1,5 @@
 ---
-date: 2022-01-22T16:00:0+01:00
+date: 2022-01-22T16:00:00+01:00
 description: "De flemme en motivation"
 featured_image: "/images/letters_bg_1280.jpg"
 tags: ["cms","golang","hugo"]
