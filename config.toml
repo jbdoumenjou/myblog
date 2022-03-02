@@ -1,13 +1,14 @@
-title = "Notre-Dame de Paris"
+title = "JB's blog"
 baseURL = "https://jbdoumenjou.github.io"
 languageCode = "en-us"
 theme = "ananke"
 
 DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
-Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+Paginate = 10
 googleAnalytics = ""
 enableRobotsTXT = true
+disqusShortname = 'jbdoumenjou'
 
 [languages]
 	[languages.en]
