@@ -408,17 +408,130 @@ Without this event, we probably wouldn't know that he was already able to break 
 We have to understand the geopolitical context to understand how such a discovery can remain secret.
 Indeed, the [Crimean war](https://en.wikipedia.org/wiki/Crimean_War) war was raging,
 and being able to decipher communications deemed unbreakable is a considerable tactical advantage.
-It is easy to think that Charles Babbage was bound to military secrecy in order to keep this advantage.
+It is easy to think that Charles Babbage was bound to military secrecy to keep this advantage.
 
 Finally, it will be [Friedrich Kasiski](https://en.wikipedia.org/wiki/Friedrich_Kasiski),
 a German infantry officer and cryptographer,
 who will publish the method of resolution which will bear his name:
 [Kasiski examination](https://en.wikipedia.org/wiki/Kasiski_examination).
 
+The method starts from a weakness of the Vigenère encryption, the key is repeated to encrypt the message.
+The basic principle is to find repetition in the ciphered words and to check the gap between these repetitions.
+This gap will be used to define the size of the key.
+Once the key size is found, the cipher can be divided into n simple ciphers and decrypted using frequency analysis.
+
+Let's try this method!
+We will start with the text that has been decoded thanks to the frequency analysis.
+
+> Wpwoh dov dh eglf vr hjcjrkiw tikv xjxu ylxmovv keaioi wlj eoeucutjqq ojy? Iqziaes, vr fj eghlgneov, wlj tfzw rjeeu ws ge mqqk jnpwjl yo ugqh yo bp dzjrbih hnsutlfztjqq sk tig flfrbewiws. Jh lx ns oqw xme dcvi, ttigu gmascfxjrjuwmhs ncb fj utgg wzci cv xme gkuwy lfvwiw fsgtyjnda rv yhf wvyfl qqvmyipp rj aoxgow fne errxoocqxx. |
+
+I used an online tool [https://www.dcode.fr/vigenere-cipher](https://www.dcode.fr/vigenere-cipher) to encrypt the text.
+
+Now, we have to search for a repetitive group of symbols and the distances between them.
+You can do it by hand, but I prefer to use the "Vigenere Cryptanalysis (Kasiski's Test)" option in the online tool.
+Thanks to this result, six-character long, we will split our ciphered text and analyze each group related to the same key character.
+It will look like:
+
+| L1  | L2  | L3  | l4  | L5  | L6  |
+|-----|-----|-----|-----|-----|-----|
+| W   | p   | w   | o   | h   | d   |
+| o   | v   | d   | h   | e   | g   | 
+| l   | f   | v   | r   | h   | j   |
+| c   | j   | r   | k   | i   | w   |
+
+Then, for each letter,
+we will apply the frequency analysis and find the key and the matching character exactly like for Caesar's code.
+Finally, we get:
+
+| 0             | 1                                                                                                                                                                                                                                                                                                                                       |
+|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Plaintext     | Would you be able to decipher this text without having the encryption key? However, to be efficient, the text needs to be long enough to tend to an average distribution of the characters. If it is not the case, other characteristics may be used such as the first letter frequency or the usual position of vowels and consonants. |
+| Key           | abcdef                                                                                                                                                                                                                                                                                                                                  |
+| Ciphered Text | Wpwoh dov dh eglf vr hjcjrkiw tikv xjxu ylxmovv keaioi wlj eoeucutjqq ojy? Iqziaes, vr fj eghlgneov, wlj tfzw rjeeu ws ge mqqk jnpwjl yo ugqh yo bp dzjrbih hnsutlfztjqq sk tig flfrbewiws. Jh lx ns oqw xme dcvi, ttigu gmascfxjrjuwmhs ncb fj utgg wzci cv xme gkuwy lfvwiw fsgtyjnda rv yhf wvyfl qqvmyipp rj aoxgow fne errxoocqxx. |
+
+We are lucky because we used computer tools for our example.
+I let you imagine the complexity of such a task before the computer era.
+
+I'm talking about computers, but I probably should have talked about machines instead.
+And speaking of machines, there is one that has written a part of modern history and that is now legendary.
+Let's go and discover it.
+
+## World War Decrypt
+
+The 19th century will see the acceleration of scientific discoveries, especially with the electrification of communications.
+It is at the beginning of the 20th century that will appear a famous electromechanical machine in cryptography: Enigma.
+
+We are 
+
+un ensemble de machines qui ont évoluées avec le temps durant la guerre
+machine électromecanique
+touches keyboard
+tableau lumineux lampboard
+version arméee +tableau avec inversement des lettres. plugboard
+
+5 rotors amovibles => 3 fonctionnels 60 possibilities
+
+rotor choice: 5*4*3=60 possibilities
+starting position for rotor: 26 * 26 * 26 = 17576
+patchboard only for army : 
+
+26!
+-------      = 150 738 274 937 250
+6! 10! 2^10
+
+
+26! => all permutations available
+6 letters not swapped => 6!
+don't care about the pair order => 10!
+ a -> b and b->a is the same permutation => 2^10 (dived by 2 for each pair)
+
+
+
+158 962 555 217 826 360 000
+
+soluble encre
+
+26 positions par rotors 26 * 26 * 26 = 17576
+intervertir caracteres 150 738 274 937 250
+60 * 17576 * 150 738 274 937 250 
+158 962 555 217 826 360 000
+et les clés changent toutes les 24 heures.
+la machine ne fait que donné le résultats chiffrées.
+cahier pour le réglages changée tous les mois
+anedocte encre soluble pour la marine allemande
+
+
+reflector pairs wires
+input wheel
+
+
+rapport de météo
+wetterbericht => aucune lettre en commun
+Heil hitler
+
+cribs ???
+
+écourté la guerre de 2 ans et 14M de morts
+
+meme réglage d'encodage
+
+rotor tourne a chaque appuie de touche
 
 END of article
 
 ## Notes
+
+
+ historical anecdotes about the improvement of techniques to counter cryptanalysis.
+ Mary Queen of Scots beheaded for treason after her letters were decoded
+ Alberti's contribution, Vigenère's square
+ Babbage's differential machine
+ Morse code
+ Enigma & Turing
+ public key cryptography and the Diffie-Hellman algorithm
+ RSA
+ public key certificates
+ the quantum processor or the end of cryptography.
 
 
 
@@ -528,4 +641,5 @@ D'hier à aujourd'hui meme besoin, outils différents. Puissance de calcul et im
 * https://en.wikipedia.org/wiki/Cryptography
 * http://www.cypher.com.au/crypto_history.htm
 * https://ieeexplore.ieee.org/abstract/document/8094107
+* https://www.youtube.com/watch?v=ybkkiGtJmkM
 
