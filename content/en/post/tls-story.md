@@ -459,9 +459,60 @@ Let's go and discover it.
 ## World War Decrypt
 
 The 19th century will see the acceleration of scientific discoveries, especially with the electrification of communications.
-It is at the beginning of the 20th century that will appear a famous electromechanical machine in cryptography: Enigma.
+[Samuel Morse](https://en.wikipedia.org/wiki/Samuel_Morse) will participate in the advent of the [electric telegraph](https://en.wikipedia.org/wiki/Electrical_telegraph),
+and an associated alphabet: the [Morse Code](https://en.wikipedia.org/wiki/Morse_code).
+The Morse code is based on the sequence of electrical impulses.
+In fact, it is a simple substitution of a character by a composition of two types of impulses, one short and one long.
+If you are familiar with the [binary code](https://en.wikipedia.org/wiki/Binary_code),
+you will understand easily why it is considered as the first [digital code](https://en.wikipedia.org/wiki/Digital_data).
 
-We are 
+The wireless telegraph will appear at the very beginning of the 20th century and will use the Morse alphabet.
+History repeats itself, a means of communication spreads and so does the need to secure messages.
+The Morse code is readable by everyone and therefore requires a layer of encryption.
+Some codes that were considered inviolable, such as the [ADFGVX cipher](https://en.wikipedia.org/wiki/ADFGVX_cipher), were quickly broken.
+It is with this in mind, just at the end of the World War 1 that a German engineer,
+[Arthur Scherbius](https://en.wikipedia.org/wiki/Arthur_Scherbius),
+created a legendary brand of encryption machine: [Enigma](https://en.wikipedia.org/wiki/Enigma_machine).
+
+Here we are, during World War II, fighting against the Nazi army.
+Each intercepted communication can reveal important information and change the course of the war.
+The Enigma machine will be the communication weapon of the German army which will make it evolve little by little towards the most complex model.
+
+Basically, it is a poly-alphabetic cipher with code modification for each character.
+Each time you type a character on the keyboard, the wheel will move like distance counter so the code is different for each character.
+Moreover, a plug board is used to switch 10 characters and improve complexity.
+To understand deeply how this marvel of electro-mechanical technology works,
+I invite you to watch this excellent [video](https://www.youtube.com/watch?v=ybkkiGtJmkM).
+
+To realize the power of this encryption machine, let's do a little mathematics.
+Let's decompose the configuration of the machine.
+First, we can choose 3 wheels among 5: 5*4*3= 60 possibilities
+Then, each rotor is composed of the 26 alphabetic character: 26*26*26= 17 576 possibilities.
+Now the hard part, the plug board.
+We manipulate the whole alphabet, all permutation available: 26! 
+But we use only 10 permutation, that means 6 characters are ignored: we can divide by 6!
+We do not care about the order: we can divide by 10!
+the a->b or b->permutation are the same: we can divide by 2^10
+the whole equation for this part is:
+
+26! / (6! 10! 2^10) = 150 738 274 937 250
+
+Finally:
+(wheel choice) * (initial rotor position) * (switch board) = mind blow
+60 * 17 576 * 150 738 274 937 250 = 158 962 555 217 826 360 000
+
+This is a huge number,
+and what it means is that the code is unbreakable without finding a way to reduce the possibilities,
+or any other technique to abstract from the manual resolution.
+
+Ok, I went a little fast and there are still a lot of unknowns.
+First of all, the machines must have the same initial setting to be able to decrypt the message,
+it is then a matter of typing the encrypted message on the machine.
+The machine does not emit a signal, for each character typed,
+a light lights up under the result and an operator must transmit it on paper or via a means of communication.
+The settings change every day following a specific booklet which is changed every month if the booklet is recovered.
+Legend has it that the German Navy used a soluble ink to destroy the data easily.
+
 
 un ensemble de machines qui ont évoluées avec le temps durant la guerre
 machine électromecanique
