@@ -487,12 +487,12 @@ I invite you to watch this excellent [video](https://www.youtube.com/watch?v=ybk
 To realize the power of this encryption machine, let's do a little mathematics.
 Let's decompose the configuration of the machine.
 First, we can choose 3 wheels among 5: 5*4*3= 60 possibilities
-Then, each rotor is composed of the 26 alphabetic character: 26*26*26= 17 576 possibilities.
+Then, the initial position of rotors that are composed of the 26 alphabetic characters: 26*26*26= 17 576 possibilities.
 Now the hard part, the plug board.
 We manipulate the whole alphabet, all permutation available: 26! 
-But we use only 10 permutation, that means 6 characters are ignored: we can divide by 6!
+But we use only 10 permutations, that means 6 characters are ignored: we can divide by 6!
 We do not care about the order: we can divide by 10!
-the a->b or b->permutation are the same: we can divide by 2^10
+the a->b or b->a permutation are the same: we can divide by 2^10
 the whole equation for this part is:
 
 26! / (6! 10! 2^10) = 150 738 274 937 250
