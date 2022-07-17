@@ -543,65 +543,35 @@ These "cryptographic bombs" represent a first step towards modern computers.
 [Harry Hinsley](https://en.wikipedia.org/wiki/Harry_Hinsley), English historian and cryptanalyst,
 considers that this work shortened the World War 2 by two years and saved over 14 millions lives.
 
+There would be thousands of things to tell about this period and the scientists who are at the origin of our modern computing,
+but this is another story.
+Let's jump back in time and go to the United States in the 1970s.
 
-un ensemble de machines qui ont évoluées avec le temps durant la guerre
-machine électromecanique
-touches keyboard
-tableau lumineux lampboard
-version arméee +tableau avec inversement des lettres. plugboard
+## Public Key for Private Messages
 
-5 rotors amovibles => 3 fonctionnels 60 possibilities
+The computing power of computers was replacing rotors and encryption continues to progress rapidly,
+like [Lucifer Cipher](https://en.wikipedia.org/wiki/Lucifer_(cipher) design by [Horst Feistel](https://en.wikipedia.org/wiki/Horst_Feistel)
+,the precursor of [DES](https://en.wikipedia.org/wiki/Data_Encryption_Standard),
+However, a problem persists: how to distribute the encryption keys in a secure way?
+Indeed, the interception of the keys reduces to nothing the efforts of the encryption, as complex as it is.
 
-rotor choice: 5*4*3=60 possibilities
-starting position for rotor: 26 * 26 * 26 = 17576
-patchboard only for army : 
+Let's imagine for a moment that we could initiate an exchange that would make it possible to set up encryption without any prior exchange.
+This is what the crytographers [Whitfield Diffie](https://fr.wikipedia.org/wiki/Whitfield_Diffie),
+[Martin Hellman](https://en.wikipedia.org/wiki/Martin_Hellman),
+and [Ralph Merkle](https://en.wikipedia.org/wiki/Ralph_Merkle) invented: the [Diffie-Hellman key exchange](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange) method.
 
-26!
--------      = 150 738 274 937 250
-6! 10! 2^10
-
-
-26! => all permutations available
-6 letters not swapped => 6!
-don't care about the pair order => 10!
- a -> b and b->a is the same permutation => 2^10 (dived by 2 for each pair)
-
-
-
-158 962 555 217 826 360 000
-
-soluble encre
-
-26 positions par rotors 26 * 26 * 26 = 17576
-intervertir caracteres 150 738 274 937 250
-60 * 17576 * 150 738 274 937 250 
-158 962 555 217 826 360 000
-et les clés changent toutes les 24 heures.
-la machine ne fait que donné le résultats chiffrées.
-cahier pour le réglages changée tous les mois
-anedocte encre soluble pour la marine allemande
-
-
-reflector pairs wires
-input wheel
-
-
-rapport de météo
-wetterbericht => aucune lettre en commun
-Heil hitler
-
-cribs ???
-
-écourté la guerre de 2 ans et 14M de morts
-
-meme réglage d'encodage
-
-rotor tourne a chaque appuie de touche
+Fortunately for the average person,
+there is an analogy and terminology commonly used to understand this method without any special knowledge.
 
 END of article
 
 ## Notes
 
+
+Fun facts:
+
+lucifer comes from demon that comes from demonstration truncated because of length constraints
+HAL => IBM
 
  historical anecdotes about the improvement of techniques to counter cryptanalysis.
  Mary Queen of Scots beheaded for treason after her letters were decoded
