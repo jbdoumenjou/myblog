@@ -474,6 +474,8 @@ It is with this in mind, just at the end of the World War 1 that a German engine
 [Arthur Scherbius](https://en.wikipedia.org/wiki/Arthur_Scherbius),
 created a legendary brand of encryption machine: [Enigma](https://en.wikipedia.org/wiki/Enigma_machine).
 
+// add picture fo enigma
+
 Here we are, during World War II, fighting against the Nazi army.
 Each intercepted communication can reveal important information and change the course of the war.
 The Enigma machine will be the communication weapon of the German army which will make it evolve little by little towards the most complex model.
@@ -483,6 +485,8 @@ Each time you type a character on the keyboard, the wheel will move like distanc
 Moreover, a plug board is used to switch 10 characters and improve complexity.
 To understand deeply how this marvel of electro-mechanical technology works,
 I invite you to watch this excellent [video](https://www.youtube.com/watch?v=ybkkiGtJmkM).
+
+// add illustration for settings
 
 To realize the power of this encryption machine, let's do a little mathematics.
 Let's decompose the configuration of the machine.
@@ -503,7 +507,7 @@ Finally:
 
 This is a huge number,
 and what it means is that the code is unbreakable without finding a way to reduce the possibilities,
-or any other technique to abstract from the manual resolution.
+and any technique to abstract from the manual resolution.
 
 Ok, I went a little fast and there are still a lot of unknowns.
 First of all, the machines must have the same initial setting to be able to decrypt the message,
@@ -512,6 +516,32 @@ The machine does not emit a signal, for each character typed,
 a light lights up under the result and an operator must transmit it on paper or via a means of communication.
 The settings change every day following a specific booklet which is changed every month if the booklet is recovered.
 Legend has it that the German Navy used a soluble ink to destroy the data easily.
+
+Thanks to document recovered by the French military intelligence,
+a Polish mathematician and cryptologists [Marian Rejewski](https://en.wikipedia.org/wiki/Marian_Rejewski) aided by
+[Jerzy Różycki](https://en.wikipedia.org/wiki/Jerzy_R%C3%B3%C5%BCycki) and [Henryk Zygalski](https://en.wikipedia.org/wiki/Henryk_Zygalski),
+found a first breach to break the codes on some versions of enigma in December 1932.
+They created a machine called "bomba kryptologiczna", the [cryptological bomb](https://en.wikipedia.org/wiki/Bomba_(cryptography))
+
+Whether for technical reasons or because of the deteriorating political situation,
+the Poles decided to share their findings with their French and British allies in July 1939.
+
+This is where the genius [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing),
+widely considered to be the father of theoretical computer science and artificial intelligence,
+intervenes with his team at [Bletchley Park](Bletchley Park).
+
+Enigma had several weaknesses, one of them is that a letter can never be replaced by itself.
+This means that if we know a piece of the message in plain text, we can match it to the encrypted message and eliminate all positions with a common letter.
+Now, it happens that every morning, at 6 o'clock, a weather message was sent starting with weather report "wetterbericht" in German and ending with "heil hitler".
+This is an entry point for a [Known-plaintext attack](https://en.wikipedia.org/wiki/Known-plaintext_attack), also called crib attack.
+In order to reduce the number of possibilities,
+they developed a machine called [bomb](https://en.wikipedia.org/wiki/Bombe) (in honor of its predecessor bomba).
+To make it simple, it allowed to eliminate Enigma settings that could not work by successive guesses.
+Then, all that was left to do was to check all the possibilities that were not eliminated by hand.
+These "cryptographic bombs" represent a first step towards modern computers.
+
+[Harry Hinsley](https://en.wikipedia.org/wiki/Harry_Hinsley), English historian and cryptanalyst,
+considers that this work shortened the World War 2 by two years and saved over 14 millions lives.
 
 
 un ensemble de machines qui ont évoluées avec le temps durant la guerre
