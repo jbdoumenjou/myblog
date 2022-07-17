@@ -486,7 +486,7 @@ Moreover, a plug board is used to switch 10 characters and improve complexity.
 To understand deeply how this marvel of electro-mechanical technology works,
 I invite you to watch this excellent [video](https://www.youtube.com/watch?v=ybkkiGtJmkM).
 
-// add illustration for settings
+// https://en.wikipedia.org/wiki/Enigma_machine#/media/File:Enigma_wiring_kleur.svg
 
 To realize the power of this encryption machine, let's do a little mathematics.
 Let's decompose the configuration of the machine.
@@ -558,10 +558,35 @@ Indeed, the interception of the keys reduces to nothing the efforts of the encry
 Let's imagine for a moment that we could initiate an exchange that would make it possible to set up encryption without any prior exchange.
 This is what the crytographers [Whitfield Diffie](https://fr.wikipedia.org/wiki/Whitfield_Diffie),
 [Martin Hellman](https://en.wikipedia.org/wiki/Martin_Hellman),
-and [Ralph Merkle](https://en.wikipedia.org/wiki/Ralph_Merkle) invented: the [Diffie-Hellman key exchange](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange) method.
+and [Ralph Merkle](https://en.wikipedia.org/wiki/Ralph_Merkle) invented:
+the [Diffie-Hellman key exchange](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange) method.
 
 Fortunately for the average person,
 there is an analogy and terminology commonly used to understand this method without any special knowledge.
+
+// picture https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange#/media/File:Diffie-Hellman_Key_Exchange.svg
+
+We have two protagonists [Alice and Bob](https://en.wikipedia.org/wiki/Alice_and_Bob).
+They publicly agree on a common color, yellow.
+Alice send yellow + red (a secret color) = orange to Bob.
+Bob don't know how orange has been created, he will mix its own secret color:
+orange + cyan = (yellow + red) + cyan = yellow-brown
+Bob send to Alice (yellow + cyan) = light-blue to Alice.
+Alice will mix light-blue with its own secret color:
+light-blue + red = (yellow + cyan) + red = yellow-brown.
+
+Tadaaa! They have the same resulting color because they both used a mix of yellow + red + cyan (the order does not matter).
+The trick is the difficulty to retrieve the original colors from the mixes publicly exchanged.
+Now, imagine using large numbers instead of colors, and it becomes extremely difficult to guess the secret parts.
+
+This method is one of the first [Public-key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography).
+It is also an asymmetric cryptography as the system uses different keys for encryption and decryption.
+This method is based on functions easy to apply but impossible,
+or extremely difficult to revert called [One-way functions](https://en.wikipedia.org/wiki/One-way_function).
+
+One must be careful not to confuse the key generation part with the encryption part of the communication itself.
+Indeed, we have just seen that the Diffie-Hellman method is asymmetric,
+but it is only the creation of a secret which can then be used in a symmetric encryption.
 
 END of article
 
