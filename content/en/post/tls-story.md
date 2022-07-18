@@ -588,6 +588,39 @@ One must be careful not to confuse the key generation part with the encryption p
 Indeed, we have just seen that the Diffie-Hellman method is asymmetric,
 but it is only the creation of a secret which can then be used in a symmetric encryption.
 
+Let's take a step back a few years.
+
+## The Power of Primes
+
+We are in 1977, [Ron Rivest](https://en.wikipedia.org/wiki/Ron_Rivest), [Adi Shamir](https://en.wikipedia.org/wiki/Adi_Shamir) and [Leonard Adleman](https://en.wikipedia.org/wiki/Leonard_Adleman)
+describe a new public-key cryptosystem Algorithm: [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)).
+The algorithm is based on prime number properties,
+it is easy to make the product of two primes but very [difficult to factorize](https://en.wikipedia.org/wiki/Integer_factorization).
+
+[Martin Gardner](https://en.wikipedia.org/wiki/Martin_Gardner), an American popular mathematics and popular science writer,
+publishes an article "A new kind of cipher that would take millions of years to break".
+In this article, he challenged its readers to find the secret sentence from the public key and the explanation of principle.
+The phrase was "[The Magic Words are Squeamish Ossifrage](https://en.wikipedia.org/wiki/The_Magic_Words_are_Squeamish_Ossifrage)" and was found in 1993 by a large team and considerable means.
+He was presenting the RSA, and even today a lot of encryption algorithm are base on primes properties.
+
+Perfect! we found awesome technologie that could last for millions years... Really ?
+
+## The Quantum Menace
+
+Did the encryption win? Isn't the computing power enough to counter any algorithm?
+Cryptography continues to evolve to counteract technical and mathematical advances and new algorithms such as [Elliptic-curve cryptography](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography) are pushing the previous limits.
+
+The era of quantum computing is coming and with it new [physical principles](https://en.wikipedia.org/wiki/Quantum_mechanics), new mathematical capabilities.
+One must be careful not to mix several things.
+First, quantum cryptography which allows to use the laws of quantum physics to exchange information.
+Then the [Post-quantum cryptography](https://en.wikipedia.org/wiki/Post-quantum_cryptography) which is the evolution of the current algorithms to make them resistant to quantum processors.
+
+In both cases, these are fascinating subjects that require articles of their own.
+
+We have reached the end of this first ballad.
+I hope you have enjoyed it, that you have been able to discover new things and glimpse the concepts of modern computing.
+See you soon for a new escapade in the fabulous universe of computer sciences
+
 END of article
 
 ## Notes
