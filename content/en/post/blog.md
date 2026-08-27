@@ -1,7 +1,9 @@
 ---
 date: 2022-01-22T16:00:00+01:00
 description: "From laziness to motivation"
-featured_image: "/images/letters_bg_1280.jpg"
+cover:
+  image: "/images/letters_bg_1280.jpg"
+  relative: false
 tags: ["cms","golang","hugo"]
 title: "This is the story of a blog"
 ---
