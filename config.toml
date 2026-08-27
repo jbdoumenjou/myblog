@@ -1,6 +1,6 @@
 title = "JB's blog"
 baseURL = "https://jbdoumenjou.github.io"
-languageCode = "en-us"
+locale = "en-us"
 theme = "ananke"
 
 DefaultContentLanguage = "en"
